@@ -9,7 +9,7 @@ Two illustrative examples are provided within the repository:
 The simulation leverages the M/M/1 model within Kendall's notation. To execute the simulation, the program requires an input file **Metro_topology_full_Milano.xlsx** which contains topology information about links and nodes. 
 Input parameters include link capacity (fixed at 10 Gbps), packet size (set at 1250 bytes), the population size for simulation (denoted as "pop_number" with a default of 50,000 samples), and the number of experiments for population analysis (represented by "n_exp" with a default value of 100).
 
-## Simulation
+## Simulation process
 The simulation begins by randomly generating link loads within the range of 0.1 to 0.8. 
 Subsequently, it calculates the theoretical traffic and delays across each link based on these generated loads.
 
