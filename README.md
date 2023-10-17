@@ -15,7 +15,7 @@ Subsequently, it calculates the theoretical traffic and delays across each link 
 
 ## Analysis
 ### Threshold Definition
-In preparation for subsequent calculations, the threshold has been defined at 82 microseconds (modifiable through the 'threshold_us' variable).
+In preparation for subsequent calculations, the threshold has been defined at 82 microseconds (modifiable through the "threshold_us" variable).
 
 ### Results
 
