@@ -11,22 +11,14 @@ Input parameters include link capacity (fixed at 10 Gbps), packet size (set at 1
 
 ## Simulation process
 The simulation begins by randomly generating link loads within the range of 0.1 to 0.8. 
-Subsequently, it calculates the theoretical traffic and delays across each link based on these generated loads.
-
+Subsequently, it calculates the theoretical traffic and delays across each link based on these generated loads. Afterwards, the program simulates delays for 50,000 packets along each path.
 
 ## Analysis
 ### Threshold Definition
-
-For effective calculations, it is essential to specify a threshold value for each Local CO in microseconds (us). 
-The program provides feedback after execution the results section, indicating whether it is excessively low or high and for which Local CO.
-If packet delays originating from a specific Local CO to all nodes (National COs) fall below the defined threshold, it becomes impracticable to define which National CO has the lowest delays.
-As well as, if all data surpasses the threshold.
+In preparation for subsequent calculations, the threshold has been defined at 82 microseconds.
 
 ### Results
 
-The program conducts calculations for different sample sizes, including 10, 41, 164, and 452 packets, each corresponding to a Confidence Level of 80% with margin values of 21%, 10%, 5%, and 3% respectively.
-The output includes the percentage of data falling below the threshold, enabling the identification of closest National COs (with the highest percentage of values) based on latency.
-
-This project serves as a valuable tool for network latency estimation and decision-making and desing processes, aiding in the optimization of network traffic routing and Data Center selection.
-
-
+The program conducts calculations for different sample sizes, including 5, 10, 50, 100, and 400 packets, each corresponding to a Confidence Level of 95% with margin values of 44%, 31%, 14%, 10% and 5% respectively.
+The output includes the heatmaps of results, where each path satisfies (or not) the threshold from each LCO to each NCO across the scenario of the sample size of 5 packets, and 100 packets. Additionally, certain results on the heatmap are highlighted with red and blue points, indicating instances where the outcome does not align with the original result obtained for the entire population.
+The final plot delineates the percentage ranges of errors associated with False Negative (FN) and False Positive (FP) results across 100 experiments for all sampling rates of 5, 10, 50, 100, and 400 packets.
