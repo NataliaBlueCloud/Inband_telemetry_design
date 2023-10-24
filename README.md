@@ -21,6 +21,7 @@ In preparation for subsequent calculations, the threshold has been defined at 82
 
 The program conducts calculations for different sample sizes, including 5, 10, 50, 100, and 400 packets, each corresponding to a Confidence Level of 95% with margin values of 44%, 31%, 14%, 10% and 5% respectively.
 
-The output includes the heatmaps of results, where each path satisfies (or not) the threshold from each LCO to each NCO across the scenario of the sample size of 5 packets, and 100 packets. Additionally, certain results on the heatmap are highlighted with red and blue points, indicating instances where the outcome does not align with the original result obtained for the entire population.
+The output includes the heatmaps of results, where each path satisfies (or not) the threshold from each ACO (Access Central Office) to each MACO (Metro Aggregation Central Office) across the scenario of the sample size of 5 packets, and 100 packets. The results are calculated with the 82 $\mu s$ threshold and a 99% packet percentage, indicating that 99% of sampled packets within a given path must fall below the threshold to fulfill the specified requirement.
 
-The final plot delineates the percentage ranges of errors associated with False Negative (FN) and False Positive (FP) results across 100 experiments for all sampling rates of 5, 10, 50, 100, and 400 packets.
+Additionally, certain results on the heatmap are highlighted with red and blue points, indicating instances where the outcome does not align with the original result obtained for the entire population.
+
